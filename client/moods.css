@@ -52,6 +52,7 @@ border-spacing: 0;
 h1 {
    font-family: verdana;
    font-size: 32px;
+   margin-bottom: 10px;
 }
 
 ol li {
@@ -88,5 +89,6 @@ img {
 @media only screen and (max-width: 450px) {
     ol li {
         display: block;
+        width: 100%;
     }
 }
