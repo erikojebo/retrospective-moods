@@ -15,6 +15,7 @@ $(document).ready(function () {
     $("#selectedImage").click(function () {
         console.log("click");
 	    $("#overlay").hide();
+        $("#content").show();
     });
 
 	$("ol img").click(function () {
@@ -23,5 +24,6 @@ $(document).ready(function () {
         
         $("#selectedImage").attr("src", imageSource);
         $("#overlay").show();
+        $("#content").hide();
     });
 });
