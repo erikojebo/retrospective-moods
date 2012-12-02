@@ -67,12 +67,13 @@ html, body {
 
 img {
     max-width: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #selectedImage {
     position: absolute;
-/*    margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
     left: 0px;
     top: 0px;
     display: block;
