@@ -17,8 +17,8 @@ $(document).ready(function () {
     $(window).trigger('resize');
 
     $("#selectedImage").click(function () {
-	    $("#overlay").hide();
-        $("#content").show();
+	    $("#overlay").fadeOut(300);
+        $("#content").fadeIn(300);
     });
 
 	$("ol img").click(function () {
@@ -29,7 +29,8 @@ $(document).ready(function () {
             width: $(this).width(),
             height: $(this).height(),
             left: $(this).position().left,
-            top: $(this).position().top
+            top: $(this).position().top,
+            opacity: 0
         });
 
         $("#selectedImage").attr("src", imageSource);
@@ -46,6 +47,7 @@ $(document).ready(function () {
             left: left + 'px',
             width: size + "px",
             height: size + "px",
+            opacity: 1
         }, 300);
     });
 });
